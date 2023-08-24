@@ -1,0 +1,141 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles for the AI image generator */
+.ai_image_generator {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.header {
+    font-size: 70px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.header span {
+    color: #4cde1b;
+    font-weight: 600;
+}
+
+.img-loading {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-loading img {
+    width: 512px;
+}
+
+.search-box {
+    display: flex;
+    width: 800px;
+    height: 95px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    
+}
+
+.search-input {
+    width: 600px;
+    height: 70px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    color: white;
+    padding-left: 35px;
+    margin-right: 35px;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.generate-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 85px;
+    font-size: 20px;
+    border-radius: 50px;
+    background: #0c4444;
+    border-color: #033235;
+    cursor: pointer;
+}
+.generate-btn :hover{
+    background-color: #0ff;
+}
+
+/* Styles for the animated background */
+:root {
+    --background-size: unquote('min(100vw, 40em)');
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition-duration: 0.001s !important;
+    }
+}
+
+
+
+/* Styles for the input group */
+.input-group {
+    width: 100%;
+    max-width: 20em;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.input-group__label {
+    padding: 0 0.5em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    letter-spacing: 0.1em;
+    color: rgba(255, 220, 255, 0.6);
+    cursor: pointer;
+}
+
+.input-group__input {
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1;
+    border-style: none;
+    outline: none;
+    height: calc(1em + 1.6em + 0.5em);
+    width: 100%;
+    padding: 0.8em 1em;
+    border: 0.25em solid transparent;
+    background-image: linear-gradient(#000, #000),
+        linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 1.8em;
+    background-size: 200% 100%;
+    transition: background-position 0.8s ease-out;
+}
+
+.input-group__input:hover {
+    background-position: 100% 0;
+}
+
+.input-group__input:focus {
+    outline: 2px dashed #ad2b89;
+    outline-offset: 0.5em;
+}
+
