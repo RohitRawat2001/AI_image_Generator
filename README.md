@@ -1,5 +1,5 @@
 # AI image Generator
-this make with the help greatStack yt
+this make with the help of greatStack yt
 # Using Openai Api 
 
 # Output
